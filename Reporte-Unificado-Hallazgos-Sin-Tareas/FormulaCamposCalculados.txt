@@ -1,0 +1,5 @@
+Días desde identificación hasta cierre
+round( [FECHA_FIN] - [FECHA_EJECUCION_IDENTIFICACION], 1)
+
+Meses desde identificación hasta cierre
+round(months_between( [FECHA_FIN], [FECHA_EJECUCION_IDENTIFICACION]), 1)
