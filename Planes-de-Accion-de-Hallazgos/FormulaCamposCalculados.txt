@@ -1,0 +1,6 @@
+--Acc_Avance2
+
+CASE WHEN [Acc_Avance] = 100 AND [Acc_Situación] <> 'Cancelado'
+	THEN [Acc_Avance]
+	ELSE 0
+END
