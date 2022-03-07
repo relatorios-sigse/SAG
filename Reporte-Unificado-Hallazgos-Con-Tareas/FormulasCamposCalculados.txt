@@ -1,0 +1,35 @@
+--Método
+
+CASE WHEN [ID_HALLAZGO] != concat ( [ID_HALLAZGO], cast( [AC_METODO]  as VARCHAR2(255 CHAR) ) )
+	THEN cast( concat ( [ID_HALLAZGO], cast( [AC_METODO]  as VARCHAR2(255 CHAR) ) ) as varchar2(255 char))
+END
+
+--Maquinaria
+
+CASE WHEN [ID_HALLAZGO] != concat ( [ID_HALLAZGO], cast( [AC_MAQUINARIA]  as VARCHAR2(255 CHAR) ) )
+	THEN cast( concat ( [ID_HALLAZGO], cast( [AC_MAQUINARIA] as VARCHAR2(255 CHAR) ) ) as varchar2(255 char))
+END
+
+--Mano de Obra
+
+CASE WHEN [ID_HALLAZGO] != concat ( [ID_HALLAZGO], cast( [AC_MANO_OBRA]  as VARCHAR2(255 CHAR) ) )
+	THEN cast( concat ( [ID_HALLAZGO], cast( [AC_MANO_OBRA] as VARCHAR2(255 CHAR) ) ) as varchar2(255 char))
+END
+
+--Medio Ambiente
+
+CASE WHEN [ID_HALLAZGO] != concat ( [ID_HALLAZGO], cast( [AC_MEDIO_AMBIENTE]  as VARCHAR2(255 CHAR) ) )
+	THEN cast( concat ( [ID_HALLAZGO], cast( [AC_MEDIO_AMBIENTE] as VARCHAR2(255 CHAR) ) ) as varchar2(255 char))
+END
+
+--Medición
+
+CASE WHEN [ID_HALLAZGO] != concat ( [ID_HALLAZGO], cast( [AC_MEDICION]  as VARCHAR2(255 CHAR) ) )
+	THEN cast( concat ( [ID_HALLAZGO], cast( [AC_MEDICION] as VARCHAR2(255 CHAR) ) ) as varchar2(255 char))
+END
+
+--Material
+
+CASE WHEN [ID_HALLAZGO] != concat ( [ID_HALLAZGO], cast( [AC_MATERIAL]  as VARCHAR2(255 CHAR) ) )
+	THEN cast( concat ( [ID_HALLAZGO], cast( [AC_MATERIAL] as VARCHAR2(255 CHAR) ) ) as varchar2(255 char))
+END
